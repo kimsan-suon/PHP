@@ -2,8 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+use App\Http\Controllers\PostController;
 
-Route::get('/', function () {
+Route::get('/', [PostController::class, 'index']);
+
+Route::get('/welcome', function () {
     return view('welcome');
 })->name('home');
 Route::get('/blog', function () {
