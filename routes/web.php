@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 use App\Http\Controllers\PostController;
 
 Route::get('/', [PostController::class, 'index']);
-
+Rout::get('/article', [ArticleController::class, 'test']);
 Route::get('/welcome', function () {
     return view('welcome');
 })->name('home');
