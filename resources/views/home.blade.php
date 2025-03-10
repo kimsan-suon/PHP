@@ -1,12 +1,8 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home page</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js']);
-</head>
-<body>
+@extends('layouts.master')
+@section('title')
+    Home page
+@endsection
 
-</body>
-</html>
+@section('content')
+    <h1>Home Page</h1>
+@endsection
